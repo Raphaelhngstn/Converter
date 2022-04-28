@@ -1,0 +1,14 @@
+@use 'src/styles/vars';
+
+.currency{
+    padding: vars.$gutter;
+    border-top: 1px solid vars.$color-alt;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color vars.$transition-slow;
+
+    &:hover{
+        background-color: vars.$color-alt;
+        transition-duration: vars.$transition-fast;
+    }
+}

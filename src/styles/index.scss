@@ -1,0 +1,11 @@
+@use 'reset';
+@use 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+  font-family: 'Quicksand', cursive;
+  background-color: vars.$color-alt;
+  font-weight: 300;
+  color: vars.$color;
+}
