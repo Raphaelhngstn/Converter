@@ -9,7 +9,7 @@ const Amount = ({currency, value}) => {
       className="amount-value"
       end={value}
       decimals={6}
-      duration={0.6}
+      duration={1}
       decimal=","
     />
     <p className="amount-currency">{currency}</p>

@@ -3,15 +3,21 @@ import Header from '../Header/Header';
 import Currencies from '../Currencies/Currencies';
 import data from '../../data/currencies';
 import Amount from '../Amount/Amount';
+import { useState } from 'react';
 
 function App() {
+
+  const [currency, setCurrency] = useState(data[0]);
+
   return (
     <div className="app">
         <Header />
-        <Currencies currencies={data}/>
+        <Currencies 
+          setCurrency={setCurrency}
+          currencies={data}/>
         <Amount 
-          value={data[0].rate}
-          currency={data[0].name}
+          value={currency.rate}
+          currency={currency.name}
         />
     </div>
   );
